@@ -13250,7 +13250,7 @@ nwFjiqZylLb/mgAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> When we look at the <strong><code>max_depth = 3</code></strong> chart we can see that with very little training points our training score is very high. The problem with this is our test data is not very telling and we receive a very low score for the testing data. As we increase the number of training points our training score does dip but the testing scores start to converge towards eachother. This graph, compared to the others has the ideal amount of complexity since our testing data matches very closely with our training data as we increase the training points. It's important to remember that it's better to have more data than more complex algorithms.</p>
+<p><strong>Answer: </strong> When we look at the <strong><code>max_depth = 3</code></strong> chart we can see that with very little training points our training score is very high. The problem with this is our test data is not very telling and we receive a very low score for the testing data. As we increase the number of training points our training score does dip but the testing scores start to converge towards eachother. This graph, compared to the others has the ideal amount of complexity since our testing data matches very closely with our training data as we increase the training points. It's important to remember that it's better to have more data than more complex algorithms. While adding more data does typically benefit the model, the effectiveness starts to diminish as you add larger sets. When adding 350 new data points to 350 data points the effectivness would be significantly less than adding 50 data points to and existing set of 50.</p>
 
 </div>
 </div>
@@ -13824,7 +13824,7 @@ mKGkJyIiMUNJT0REYsb/BwZTYK/zjR/4AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Cross validation k-fold takes the data and folds it into many sets of training and testing data. K-folds are used in grid search when optimizing a model to check many samples of data to ensure the algorithm isnt optimized for multiple samples. If you did not cross validate you risk optimizing the algorithm for one sample that may be less accurate for other samples.</p>
+<p><strong>Answer: </strong> Cross validation k-fold takes the data and folds it into many sets of training and testing data. K-folds are used in grid search when optimizing a model to check many samples of data to ensure the algorithm isnt optimized for multiple samples. If you did not cross validate you risk optimizing the algorithm for one sample that may be less accurate for other samples. When data is K-folded the data is folded K times and a single set is used as the testing data. Then this process is repeated K times. So a K-fold of three would have 3 sets of 2x training data and 1x testing data. Then after you have the acuracy result of each new data set you average the accuracy to get a well rounded accuracy.</p>
 
 </div>
 </div>
